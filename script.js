@@ -231,20 +231,4 @@ document.addEventListener('DOMContentLoaded', () => {
     if (bioElement) {
         typeWriter(bioElement, bioElement.textContent);
     }
-});
-
-// Visit Counter
-function updateVisitCount() {
-    fetch('counter.php')
-        .then(response => response.json())
-        .then(data => {
-            document.getElementById('visitCount').textContent = data.visits;
-        })
-        .catch(error => {
-            console.error('Error fetching visit count:', error);
-            document.getElementById('visitCount').textContent = 'Error';
-        });
-}
-
-// Update visit count when page loads
-document.addEventListener('DOMContentLoaded', updateVisitCount); 
+}); 
