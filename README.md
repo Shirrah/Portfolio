@@ -28,21 +28,6 @@ Edit the following sections in `index.html`:
 - Social links: Update the links in the contact section
 - Stats: Modify the numbers to reflect your actual statistics
 
-### Projects
-
-To add or modify projects, edit the `projects` array in `script.js`:
-
-```javascript
-const projects = [
-    {
-        name: "Your Project Name",
-        description: "Project description",
-        technologies: ["Tech1", "Tech2", "Tech3"]
-    },
-    // Add more projects...
-];
-```
-
 ### Skills
 
 Update the skills section in `index.html` to match your expertise:
