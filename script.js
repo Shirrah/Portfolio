@@ -96,7 +96,9 @@ AOS.init({
 // Loader
 window.addEventListener('load', () => {
     const loader = document.querySelector('.loader');
-    loader.classList.add('hidden');
+    if (loader) {
+        loader.classList.add('hidden');
+    }
 });
 
 // Theme Toggle
